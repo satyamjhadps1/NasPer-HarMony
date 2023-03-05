@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Harmony</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mate&display=swap" rel="stylesheet">
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a492e24d15.js" crossorigin="anonymous"></script>
+        
+    </head>
+<body onload="loaded()">
+    <div class="main">
+        <div id = "he">
+            <div class="navbar">
+                <div class="icon">
+                    <h2 class="logo">HarMony</h2>
+                </div>
+          
+                <div class="menu">
+                    <ul>
+                        <li><a onclick="home()">Home</a></li>
+                    </ul>
+                </div>
+          
+                <div class="search">
+                    <input class="srch" type="search" placeholder="Type To Search">
+                    <button class="btn">Search</button>
+                </div>
+          
+            </div> 
+            <div class="content">
+                    <div class="form">
+                        <input type="number" id="user_no_login" placeholder="Enter Phone Number Here">
+                        <input type="text" id="user_name_login" placeholder="Enter Name Here">
+                        <input type="email" placeholder="Enter Email Here" id="user_email_login">
+                        <input type="password" placeholder="Enter Password Here" id="user_password_login">                    
+                        <button class="btnn" onclick="loginuser()">Sign In</button>
+          
+                        <p class="link">Don't Have an account?<br>
+                        <a onclick="register()" id="lik">Sign Up </a> here</a></p>
+                        <a onclick= "forgot()" id="lik">Forgot Password?</a>
+                        <p class="liw">Sign In with</p>
+          
+                        <div class="icons">
+                            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                        </div>
+          
+                    </div>
+                </div>
+            </div>
+    <div id = "yel">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">HarMony</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a></a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" placeholder="Type To Search">
+                <button class="btn">Search</button>
+            </div>
+
+        </div> 
+        <div class="content">
+                <div class="form">
+                    <input type="text" id="user_name_register" placeholder="Enter Name Here">
+                    <input type="number" id="user_no_register" placeholder="Enter Phone Number Here">
+                    <input type="email" placeholder="Enter Email Here" id="user_email_register">
+                    <input type="password" placeholder="Enter Password Here" id="user_password_register">                    
+                    <button class="btnn" onclick="registeruser()">Sign Up</button>
+
+                    <p class="link">Have an account?<br>
+                    <a onclick="login()" id="lik">Sign In </a> here</a></p>
+                    <p class="liw">Sign Up with</p>
+
+                    <div class="icons">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                    </div>
+
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        <script src="main.js"></script>
+</body>
+</html>
