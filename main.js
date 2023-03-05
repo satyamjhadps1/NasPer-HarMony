@@ -64,7 +64,7 @@ function registeruser(){
      }
 //checking if input value is null
 if(r = "filled"){
-usernoregister = document.getElementById("usernoregister").value;
+usernoregister = document.getElementById("user_no_register").value;
 usernameregister = document.getElementById("user_name_register").value;
 userpasswordregister = document.getElementById("user_password_register").value;
 useremailregister = document.getElementById("user_email_register").value;
